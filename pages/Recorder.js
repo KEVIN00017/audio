@@ -50,7 +50,7 @@ try {
            const{sound}=await Audio.Sound.createAsync({uri:RecordingUri},{shouldPlay:true});
            await sound.setPositionAsync(0);
            await sound.playAsync()
-           const status=await sound.getStatusAsync()
+           
         }
 }
     useEffect(()=>{
@@ -68,7 +68,7 @@ try {
                 })
             }
         })
-        console.log(statustime)
+        
     },[])
     return(
     <View style={styles.container}>
